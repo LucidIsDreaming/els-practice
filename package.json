@@ -1,0 +1,28 @@
+{
+  "name": "els-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucidIsDreaming/els-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/LucidIsDreaming/els-practice/issues"
+  },
+  "homepage": "https://github.com/LucidIsDreaming/els-practice#readme",
+  "dependencies": {
+    "ejs": "^7.0.2",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

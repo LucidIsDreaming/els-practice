@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS Practice</title>
+</head>
+<body>
+    <h1>EJS Practice</h1>
+
+    <h1>Hello, <%= person.name %></h1>
+
+    <h3>Your occupation: <%= person.occupation %></h3>
+    <h3>Your favorite color: <%= person.color %></h3>
+
+    <% if (['plumber', 'organist',  
+            'bagpiper'].includes(person.occupation.toLowerCase())) { %>
+        <p>You work with pipes!</p>
+        <% } else { %>
+        <p>That's an interesting job!</p>
+    <% } %></body>
+
+    <% if (['blue', 'red',  
+            'white'].includes(person.occupation.toLowerCase())) { %>
+        <p>You have good color taste!</p>
+        <% } else { %>
+        <p>Oh! Interesting color choice</p>
+    <% } %></body>
+</html>
