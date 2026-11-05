@@ -19,7 +19,7 @@ app.get('/friends', (req, res) => {
 
 // Define a default "route" ('/')
 app.get('/movies', (req, res) => {
-    const movies = [ 'Goofy Movie', 'IT', 'Frozen', 'Tangled' ];
+    const movies = [ 'Goofy Movie', 'Moana', 'Frozen', 'Tangled' ];
     res.render('movies', { movies });
 });
 

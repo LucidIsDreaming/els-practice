@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EJS Practice</title>
+
 </head>
 <body>
-    <h1>EJS Practice</h1>
-
+    <!-- Include partials -->
+    <%- include('partials/header') %>
+    <main>
+    <h2>Welcome!</h2>
+    </main>
     <h1>Hello, <%= person.name %></h1>
 
     <h3>Your occupation: <%= person.occupation %></h3>
@@ -21,9 +25,12 @@
     <% } %></body>
 
     <% if (['blue', 'red',  
-            'white'].includes(person.occupation.toLowerCase())) { %>
+            'white'].includes(person.color.toLowerCase())) { %>
         <p>You have good color taste!</p>
         <% } else { %>
         <p>Oh! Interesting color choice</p>
     <% } %></body>
+
+    <%- include('partials/footer') %>
+
 </html>
